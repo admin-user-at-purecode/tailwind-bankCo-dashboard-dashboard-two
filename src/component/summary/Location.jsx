@@ -30,7 +30,7 @@ function LocationItem({ img, location, value, color }) {
 
 function Location() {
     return (
-        <div className="flex-1 xl:block hidden">
+        <div className="flex-1 xl:block hidden h-[75%]">
             <div className="w-full p-5 rounded-lg bg-white dark:bg-darkblack-600 h-full">
                 <div className="flex justify-between items-center">
                     <h3 className="text-xl font-bold text-bgray-900 dark:text-white">
