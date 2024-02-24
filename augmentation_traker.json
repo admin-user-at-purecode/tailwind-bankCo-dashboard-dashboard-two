@@ -18,25 +18,30 @@
         "ResProfilePopup",
         "Sidebar",
         "SidebarV2",
-        "Home",
-        "TotalWidget",
-        "RevenueFlow",
-        "DateFilter",
-        "BarChart",
+        "HomeTwo",
+        "TotalWidgetV2",
         "Efficiency",
         "MonthFilter",
         "PieChart",
+        "Summary",
+        "DateFilter",
+        "BarChart",
+        "Location",
+        "LocationItem",
         "ListTab",
         "Search",
         "Filter",
+        "FilterFull",
+        "SelectFilter",
         "UserTab",
+        "CustomerInfo",
         "Pagination",
         "Wallet",
+        "PaymentSelect",
         "Slider",
-        "PaymentSelect",
-        "GreenBtn",
-        "PaymentSelect",
-        "TeamChat"
+        "input",
+        "PaymentFilter",
+        "Calender"
     ],
     "component_information": {
         "header": {
@@ -121,13 +126,17 @@
             "description": "holding the main components of the page",
             "children": {
                 "TotalWidgetV2": {
-                    "count": 4,
-                    "location": "top left-top of the container",
-                    "description": "2 x 2 grid"
+                    "count": 1,
+                    "location": "top right-top of the container",
+                    "description": "2 x 2 grid",
+                    "children": {
+                        "count": 1,
+                        "description": "a card"
+                    }
                 },
                 "Efficiency": {
                     "count": 1,
-                    "location": "to the bottom of the header, right of the TotalWidgetV2",
+                    "location": "to the bottom of the header, left of the TotalWidgetV2",
                     "children": {
                         "MonthFilter": {
                             "count": 1,
@@ -197,14 +206,18 @@
                             }
                         },
                         "UserTab": {
-                            "CustomerInfo": {
-                                "count": 1,
-                                "location": "below the Filter component with input radio type"
-                            },
-                            "Pagination": {
-                                "count": 1,
-                                "location": "to the bottom ogf the CustomerInfo component",
-                                "description": "simple pagination"
+                            "count": 1,
+                            "description": "table component",
+                            "children": {
+                                "CustomerInfo": {
+                                    "count": 1,
+                                    "location": "below the Filter component with input radio type"
+                                },
+                                "Pagination": {
+                                    "count": 1,
+                                    "location": "to the bottom ogf the CustomerInfo component",
+                                    "description": "simple pagination"
+                                }
                             }
                         }
                     }
@@ -242,5 +255,7 @@
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": [
+        "swapped the position of TotalWidgetV2 with Summary"
+    ]
 }
