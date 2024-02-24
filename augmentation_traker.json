@@ -17,7 +17,7 @@
         "ResProfilePopup",
         "Sidebar",
         "SidebarV2",
-        "Home",
+        "HomeTwo",
         "TotalWidget",
         "RevenueFlow",
         "DateFilter",
@@ -113,14 +113,43 @@
             "location": "below the header, to the right of the SideBar",
             "description": "holding the main components of the page",
             "children": {
+                "Wallet": {
+                    "count": 1,
+                    "location": "to the top left of the container",
+                    "description": "simple card, like atm card",
+                    "children": {
+                        "PaymentSelect": {
+                            "count": 1,
+                            "description": "three dots button to which opens a list to select payment method"
+                        },
+                        "Slider": {
+                            "count": 1,
+                            "description": "simple card, like atm card"
+                        },
+                        "inputElement": {
+                            "count": 1,
+                            "description": "text type input element"
+                        },
+                        "PaymentFilter": {
+                            "count": 1,
+                            "location": "below the Slider card component",
+                            "description": "dropdown list"
+                        }
+                    }
+                },
+                "Calender": {
+                    "count": 1,
+                    "description": "a calender component",
+                    "location": "to the bottom of the Wallet component"
+                },
                 "TotalWidgetV2": {
                     "count": 4,
-                    "location": "top left-top of the container",
+                    "location": "to the right of the Wallet component, top of the page bottom of the Header",
                     "description": "2 x 2 grid"
                 },
                 "Efficiency": {
                     "count": 1,
-                    "location": "to the bottom of the header, right of the TotalWidgetV2",
+                    "location": "to the bottom of the Header, right of the TotalWidgetV2",
                     "children": {
                         "MonthFilter": {
                             "count": 1,
@@ -136,7 +165,7 @@
                 },
                 "Summary": {
                     "count": 1,
-                    "location": "bottom of the TotalWidgetV2 and Efficiency",
+                    "location": "bottom of the TotalWidgetV2 and Efficiency row",
                     "children": {
                         "DateFilter": {
                             "count": 1,
@@ -163,7 +192,7 @@
                 },
                 "ListTab": {
                     "count": 1,
-                    "location": "at the bottom of the summary and Location",
+                    "location": "at the bottom of the summary and Location to the right of the Calender",
                     "description": "table containing four columns",
                     "children": {
                         "Search": {
@@ -201,35 +230,6 @@
                             }
                         }
                     }
-                },
-                "Wallet": {
-                    "count": 1,
-                    "location": "to the right of the Summary component",
-                    "description": "simple card, like atm card",
-                    "children": {
-                        "PaymentSelect": {
-                            "count": 1,
-                            "description": "three dots button to which opens a list to select payment method"
-                        },
-                        "Slider": {
-                            "count": 1,
-                            "description": "simple card, like atm card"
-                        },
-                        "inputElement": {
-                            "count": 1,
-                            "description": "text type input element"
-                        },
-                        "PaymentFilter": {
-                            "count": 1,
-                            "location": "below the Slider card component",
-                            "description": "dropdown list"
-                        }
-                    }
-                },
-                "Calender": {
-                    "count": 1,
-                    "description": "a calender component",
-                    "location": "to the bottom of the Wallet component"
                 }
             }
         }
