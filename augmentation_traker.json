@@ -163,7 +163,7 @@
                 },
                 "ListTab": {
                     "count": 1,
-                    "location": "at the bottom of the TotalWidgetV2 and Efficiency",
+                    "location": "at the top of the component",
                     "description": "table containing four columns",
                     "children": {
                         "Search": {
