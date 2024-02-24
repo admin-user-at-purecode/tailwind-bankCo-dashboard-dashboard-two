@@ -4,7 +4,6 @@
         "background": "white"
     },
     "component_names": [
-        "header",
         "HeaderOne",
         "SearchBar",
         "ModeToggler",
