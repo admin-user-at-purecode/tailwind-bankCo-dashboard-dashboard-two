@@ -98,7 +98,7 @@
                         }
                     },
                     "children_orientation_description": "flexed"
-                }
+                },
         "Sidebar": {
             "count": 1,
             "location": "to the left of the page, fixed",
