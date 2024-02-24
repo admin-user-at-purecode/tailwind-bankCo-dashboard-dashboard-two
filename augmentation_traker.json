@@ -39,14 +39,10 @@
         "TeamChat"
     ],
     "component_information": {
-        "header": {
-            "count": 1,
-            "location": "on the top of the page",
-            "description": "HeaderOne and HeaderTwo flexed",
-            "children": {
-                "HeaderOne": {
+      "HeaderOne": {
                     "count": 1,
-                    "location": "to the left of the container",
+                    "location": "to the top of the container",
+                    "description":"visible on the large screen",
                     "children": {
                         "SearchBar": {
                             "count": 1,
@@ -103,8 +99,6 @@
                     },
                     "children_orientation_description": "flexed"
                 }
-            }
-        },
         "Sidebar": {
             "count": 1,
             "location": "to the left of the page, fixed",
@@ -222,7 +216,7 @@
                             "count": 1,
                             "description": "simple card, like atm card"
                         },
-                        "input": {
+                        "inputElement": {
                             "count": 1,
                             "description": "text type input element"
                         },
