@@ -40,7 +40,7 @@ function HeaderTwo({ handleSidebar }) {
                                 </svg>
                             </span>
                         </button>
-                        <div>
+                        <div className="BrandIcon">
                             <a href="#">
                                 <img
                                     src={logo}

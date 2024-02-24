@@ -4,7 +4,6 @@
         "background": "white"
     },
     "component_names": [
-        "header",
         "HeaderOne",
         "SearchBar",
         "ModeToggler",
@@ -18,90 +17,93 @@
         "ResProfilePopup",
         "Sidebar",
         "SidebarV2",
-        "Home",
-        "TotalWidget",
-        "RevenueFlow",
-        "DateFilter",
-        "BarChart",
+        "HomeTwo",
+        "TotalWidgetV2",
         "Efficiency",
         "MonthFilter",
         "PieChart",
+        "Summary",
+        "DateFilter",
+        "BarChart",
+        "Location",
+        "LocationItem",
         "ListTab",
         "Search",
         "Filter",
+        "FilterFull",
+        "SelectFilter",
         "UserTab",
+        "CustomerInfo",
         "Pagination",
         "Wallet",
+        "PaymentSelect",
         "Slider",
-        "PaymentSelect",
-        "GreenBtn",
-        "PaymentSelect",
-        "TeamChat"
+        "input",
+        "PaymentFilter",
+        "Calender"
     ],
     "component_information": {
-        "header": {
+        "HeaderOne": {
             "count": 1,
-            "location": "on the top of the page",
-            "description": "HeaderOne and HeaderTwo flexed",
+            "location": "to the top of the container",
+            "description": "header for large screen size",
             "children": {
-                "HeaderOne": {
+                "SearchBar": {
                     "count": 1,
-                    "location": "to the left of the container",
-                    "children": {
-                        "SearchBar": {
-                            "count": 1,
-                            "location": "placed centered",
-                            "description": "user can enter input"
-                        },
-                        "ModeToggler": {
-                            "count": 1,
-                            "location": "to the right of the SearchBar",
-                            "description": "theme toggle button",
-                            "functionality": "toggles the global theme"
-                        },
-                        "ToggleBtn": {
-                            "count": 3,
-                            "location": "to the right of the ModeToggler button",
-                            "description": "on clicked opens popup",
-                            "children": {
-                                "NotificationPopup": {
-                                    "count": 1,
-                                    "description": "opens on first toggle button clicked"
-                                },
-                                "MassagePopup": {
-                                    "count": 1,
-                                    "description": "opens on second toggle button clicked"
-                                },
-                                "StorePopUp": {
-                                    "count": 1,
-                                    "description": "opens on third toggle button clicked"
-                                }
-                            }
-                        },
-                        "Author": {
-                            "count": 1,
-                            "location": "to the right of the ToggleBtn",
-                            "description": "opens the popup containing user basic information"
-                        },
-                        "ProfilePopup": {
-                            "count": 1,
-                            "description": "opens a dropdown of some navs"
-                        }
-                    },
-                    "children_orientation_description": "flexed"
+                    "location": "placed centered",
+                    "description": "user can enter input"
                 },
-                "HeaderTwo": {
+                "ModeToggler": {
                     "count": 1,
-                    "location": "to the top of the page",
-                    "description": "visible on the mobile screen",
+                    "location": "to the right of the SearchBar",
+                    "description": "theme toggle button",
+                    "functionality": "toggles the global theme"
+                },
+                "ToggleBtn": {
+                    "count": 3,
+                    "location": "to the right of the ModeToggler button",
+                    "description": "on clicked opens popup",
                     "children": {
-                        "ResProfilePopup": {
+                        "NotificationPopup": {
                             "count": 1,
-                            "location": "to the right in the container",
-                            "description": "collapsible list on toggled"
+                            "description": "opens on first toggle button clicked"
+                        },
+                        "MassagePopup": {
+                            "count": 1,
+                            "description": "opens on second toggle button clicked"
+                        },
+                        "StorePopUp": {
+                            "count": 1,
+                            "description": "opens on third toggle button clicked"
                         }
-                    },
-                    "children_orientation_description": "flexed"
+                    }
+                },
+                "Author": {
+                    "count": 1,
+                    "location": "to the right of the ToggleBtn",
+                    "description": "opens the popup containing user basic information"
+                },
+                "ProfilePopup": {
+                    "count": 1,
+                    "description": "opens a dropdown of some navs"
+                }
+            },
+            "children_orientation_description": "flexed"
+        },
+        "HeaderTwo": {
+            "count": 1,
+            "location": "to the top of the page",
+            "description": "visible on the mobile screen",
+            "children": {
+                "BrandIcon": {
+                    "count": 1,
+                    "location": "to the left of the component",
+                    "description": "brand/website, logo/image"
+                },
+                "ResProfilePopup": {
+                    "count": 1,
+                    "location": "to the right in the container",
+                    "description": "collapsible list on toggled"
                 }
             }
         },
@@ -120,30 +122,9 @@
             "location": "below the header, to the right of the SideBar",
             "description": "holding the main components of the page",
             "children": {
-                "TotalWidgetV2": {
-                    "count": 4,
-                    "location": "top left-top of the container",
-                    "description": "2 x 2 grid"
-                },
-                "Efficiency": {
-                    "count": 1,
-                    "location": "to the bottom of the header, right of the TotalWidgetV2",
-                    "children": {
-                        "MonthFilter": {
-                            "count": 1,
-                            "location": "top right of the container",
-                            "description": "dropdown list"
-                        },
-                        "PieChart": {
-                            "count": 1,
-                            "location": "bottom of the MonthFilter",
-                            "description": "contains graphical representation in Donut"
-                        }
-                    }
-                },
                 "Summary": {
                     "count": 1,
-                    "location": "bottom of the TotalWidgetV2 and Efficiency",
+                    "location": "on the top left of the container",
                     "children": {
                         "DateFilter": {
                             "count": 1,
@@ -159,7 +140,7 @@
                 },
                 "Location": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "to the top right of the component and right of Summary component",
                     "children": {
                         "LocationItem": {
                             "count": 3,
@@ -168,9 +149,36 @@
                         }
                     }
                 },
+                "TotalWidgetV2": {
+                    "count": 1,
+                    "location": "bottom of the Summary component",
+                    "description": "2 x 2 grid",
+                    "children": {
+                        "TotalWIdgetCardV2": {
+                            "count": 4,
+                            "description": "a card"
+                        }
+                    }
+                },
+                "Efficiency": {
+                    "count": 1,
+                    "location": "to the right of the TotalWidgetV2",
+                    "children": {
+                        "MonthFilter": {
+                            "count": 1,
+                            "location": "top right of the container",
+                            "description": "dropdown list"
+                        },
+                        "PieChart": {
+                            "count": 1,
+                            "location": "bottom of the MonthFilter",
+                            "description": "contains graphical representation in Donut"
+                        }
+                    }
+                },
                 "ListTab": {
                     "count": 1,
-                    "location": "at the bottom of the summary and Location",
+                    "location": "at the bottom of the TotalWidgetV2 component and Efficiency",
                     "description": "table containing four columns",
                     "children": {
                         "Search": {
@@ -197,21 +205,25 @@
                             }
                         },
                         "UserTab": {
-                            "CustomerInfo": {
-                                "count": 1,
-                                "location": "below the Filter component with input radio type"
-                            },
-                            "Pagination": {
-                                "count": 1,
-                                "location": "to the bottom ogf the CustomerInfo component",
-                                "description": "simple pagination"
+                            "count": 1,
+                            "description": "table component",
+                            "children": {
+                                "CustomerInfo": {
+                                    "count": 1,
+                                    "location": "below the Filter component with input radio type"
+                                },
+                                "Pagination": {
+                                    "count": 1,
+                                    "location": "to the bottom ogf the CustomerInfo component",
+                                    "description": "simple pagination"
+                                }
                             }
                         }
                     }
                 },
                 "Wallet": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "to the bottom of the UserTab component",
                     "description": "simple card, like atm card",
                     "children": {
                         "PaymentSelect": {
@@ -222,9 +234,10 @@
                             "count": 1,
                             "description": "simple card, like atm card"
                         },
-                        "input": {
+                        "inputElement": {
                             "count": 1,
-                            "description": "text type input element"
+                            "description": "text type input element",
+                            "location": "to the bottom of the Slider"
                         },
                         "PaymentFilter": {
                             "count": 1,
@@ -236,11 +249,13 @@
                 "Calender": {
                     "count": 1,
                     "description": "a calender component",
-                    "location": "to the bottom of the Wallet component"
+                    "location": "to the right of the Wallet component"
                 }
             }
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": [
+        "swapped the position of Summary & Location with TotalWidgetV2 & Summary"
+    ]
 }
