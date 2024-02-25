@@ -2,8 +2,6 @@ import CalenderSelector from "../forms/CalenderSelector";
 import FullCalendar from "@fullcalendar/react";
 import daygridPlugin from "@fullcalendar/daygrid";
 
-// import Calendar from "react-calendar";
-
 function CalenderSm() {
   return (
     <div className="2xl:w-full lg:w-1/2 w-full rounded-lg bg-white dark:bg-darkblack-600 p-5">
@@ -22,8 +20,8 @@ function CalenderSm() {
               center: "",
               end: "",
             }}
-            initialDate={new Date()} // using new Date(); and set your scheduled on event array
-            businessHours={true} // display business hours
+            initialDate={new Date()}
+            businessHours={true}
             editable={false}
           />
         </div>
