@@ -1,4 +1,3 @@
-import bg from "../../../assets/images/bg/upgrade-bg.png";
 import logo from "../../../assets/images/logo/logo-color.svg";
 import logoW from "../../../assets/images/logo/logo-white.svg";
 import profileImg from "../../../assets/images/avatar/profile-xs.png";
@@ -234,40 +233,7 @@ function Sidebar({ handleActive }) {
                             <ListItem text={"Logout"} />
                         </ul>
                     </div>
-                </div>
-                <div className="upgrade-wrapper mb-[26px] h-[172px] w-full pr-[24px]">
-                    <div
-                        className="upgrade-banner relative h-full w-full rounded-lg"
-                        style={{ backgroundImage: `url(${bg})` }}
-                    >
-                        <div
-                            style={{ left: `calc(50% - 20px)`, top: `-20px` }}
-                            className="absolute flex h-10 w-10 items-center justify-center rounded-full border border-white bg-success-300"
-                        >
-                            <span>
-                                <Svg />
-                            </span>
-                        </div>
-                        <h1 className="mb-2 pt-8 text-center text-xl font-bold text-white">
-                            Unlimited Cashback
-                        </h1>
-                        <p className="mb-2 px-7 text-center text-sm leading-5 text-white opacity-[0.5]">
-                            Instant 2% back on all your spend to your account.
-                        </p>
-                        <div className="flex justify-center">
-                            <a href="#">
-                                <div className="flex h-[36px] w-[134px] justify-center rounded-lg bg-success-300 transition duration-300 ease-in-out hover:bg-success-400">
-                                    <div className="flex items-center space-x-1.5">
-                                        <span className="text-sm font-semibold text-white">
-                                            Upgrade Now
-                                        </span>
-                                        <Svg />
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </div>                
             </div>
         </aside>
     );

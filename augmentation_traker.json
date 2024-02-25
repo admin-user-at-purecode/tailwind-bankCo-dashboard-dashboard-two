@@ -22,9 +22,6 @@
         "RevenueFlow",
         "DateFilter",
         "BarChart",
-        "Efficiency",
-        "MonthFilter",
-        "PieChart",
         "ListTab",
         "Search",
         "Filter",
@@ -35,12 +32,13 @@
         "PaymentSelect",
         "GreenBtn",
         "PaymentSelect",
-        "TeamChat"
+        "TeamChat",
+        "Calender"
     ],
     "component_information": {
-      "HeaderOne": {
+                "HeaderOne": {
                     "count": 1,
-                    "location": "to the top of the container",
+                    "location": "to the top of the screen",
                     "description":"visible on the large screen",
                     "children": {
                         "SearchBar": {
@@ -101,12 +99,18 @@
         "Sidebar": {
             "count": 1,
             "location": "to the left of the page, fixed",
-            "description": "collapsible, to the left, on toggled "
+            "description": "collapsible, to the left, on toggled",
+            "children":{
+                "menuItems":{
+                    "description":"list of menus in column"
+                }
+            }
         },
         "SidebarV2": {
             "count": 1,
             "location": "to the left of the page, fixed",
-            "description": "collapsible, to the right, on toggled"
+            "description": "collapsible, to the right, on toggled",
+            "children":"svg of the menus in smaller screen"
         },
         "HomeTwo": {
             "count": 1,
@@ -118,25 +122,9 @@
                     "location": "top left-top of the container",
                     "description": "2 x 2 grid"
                 },
-                "Efficiency": {
-                    "count": 1,
-                    "location": "to the bottom of the header, right of the TotalWidgetV2",
-                    "children": {
-                        "MonthFilter": {
-                            "count": 1,
-                            "location": "top right of the container",
-                            "description": "dropdown list"
-                        },
-                        "PieChart": {
-                            "count": 1,
-                            "location": "bottom of the MonthFilter",
-                            "description": "contains graphical representation in Donut"
-                        }
-                    }
-                },
                 "Summary": {
                     "count": 1,
-                    "location": "bottom of the TotalWidgetV2 and Efficiency",
+                    "location": "bottom of the TotalWidgetV2 and Location component",
                     "children": {
                         "DateFilter": {
                             "count": 1,
@@ -152,7 +140,7 @@
                 },
                 "Location": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "to the right of the TotalWidgetV2 component",
                     "children": {
                         "LocationItem": {
                             "count": 3,
@@ -163,7 +151,7 @@
                 },
                 "ListTab": {
                     "count": 1,
-                    "location": "at the bottom of the summary and Location",
+                    "location": "at the bottom of the Summary, width-100%",
                     "description": "table containing four columns",
                     "children": {
                         "Search": {
@@ -204,7 +192,7 @@
                 },
                 "Wallet": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "to the right of the Sidebar and below the ListTab component, width 50%",
                     "description": "simple card, like atm card",
                     "children": {
                         "PaymentSelect": {
@@ -228,12 +216,12 @@
                 },
                 "Calender": {
                     "count": 1,
-                    "description": "a calender component",
-                    "location": "to the bottom of the Wallet component"
+                    "description": "a calender component, width 50% bottom right of the page",
+                    "location": "to the Listtab component and right of the Wallet component"
                 }
             }
         }
     },
-    "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "sizing_updates": ["..."],
+    "screen_and_layout_augmentations": ["dropped Efficiency component"]
 }
