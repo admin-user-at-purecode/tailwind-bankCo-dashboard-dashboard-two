@@ -1,9 +1,7 @@
 import { useState } from "react";
 import SearchBar from "../../forms/SearchBar";
-import Author from "./Author";
 import MassagePopup from "./MassagePopup";
 import NotificationPopup from "./NotificationPopup";
-import ProfilePopup from "./ProfilePopup";
 import StorePopUp from "./StorePopUp";
 import ToggleBtn from "./ToggleBtn";
 import ModeToggler from "./ModeToggler";
@@ -142,12 +140,7 @@ function HeaderOne({ handleSidebar }) {
                             </ToggleBtn>
                         </div>
                         <div className="hidden h-[48px] w-[1px] bg-bgray-300 dark:bg-darkblack-400 xl:block"></div>
-                        <Author showProfile={handlePopup} />
-                    </div>
-                    <ProfilePopup
-                        active={popup?.profile}
-                        handlePopup={handlePopup}
-                    />
+                    </div>                
                 </div>
             </div>
         </header>
