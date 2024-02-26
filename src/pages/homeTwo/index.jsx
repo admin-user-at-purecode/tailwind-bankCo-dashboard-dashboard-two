@@ -1,6 +1,4 @@
 import ListTab from "../../component/listTab";
-import Wallet from "../../component/wallet";
-import Calender from "../../component/calender";
 import TotalWidgetV2 from "../../component/widget/TotalWidgetV2";
 import Efficiency from "../../component/revenueFlow/Efficiency";
 import Summary from "../../component/summary";
@@ -23,10 +21,7 @@ function HomeTwo() {
 
                     <ListTab />
                 </section>
-                <section className="flex w-full flex-col space-x-0 lg:flex-row lg:space-x-6 2xl:w-[400px] 2xl:flex-col 2xl:space-x-0">
-                    <Wallet />
-                    <Calender />
-                </section>
+               
             </div>
         </main>
     );
