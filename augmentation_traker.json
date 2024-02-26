@@ -162,8 +162,8 @@
                     }
                 },
                 "ListTab": {
-                    "count": 1,
-                    "location": "at the bottom of the summary and Location",
+                    "count": 2,
+                    "location": "at the bottom of the summary and Location and one is below the effiecncy and totalWidgetV2",
                     "description": "table containing four columns",
                     "children": {
                         "Search": {
@@ -235,5 +235,5 @@
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": ["ListTab added "]
 }
