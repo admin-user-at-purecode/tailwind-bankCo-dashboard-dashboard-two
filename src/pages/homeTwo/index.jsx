@@ -3,8 +3,6 @@ import Wallet from "../../component/wallet";
 import Calender from "../../component/calender";
 import TotalWidgetV2 from "../../component/widget/TotalWidgetV2";
 import Efficiency from "../../component/revenueFlow/Efficiency";
-import Summary from "../../component/summary";
-import Location from "../../component/summary/Location";
 
 function HomeTwo() {
     return (
@@ -17,8 +15,6 @@ function HomeTwo() {
                         <Efficiency height="h-[180px]" />
                     </div>
                     <div className="w-full mb-[24px] flex space-x-[24px]">
-                        <Summary />
-                        <Location />
                     </div>
 
                     <ListTab />
