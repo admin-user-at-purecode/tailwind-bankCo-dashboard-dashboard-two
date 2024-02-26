@@ -226,7 +226,7 @@
                         }
                     }
                 },
-                "Calender": {
+                "Calender": { 
                     "count": 1,
                     "description": "a calender component",
                     "location": "to the bottom of the Wallet component"
