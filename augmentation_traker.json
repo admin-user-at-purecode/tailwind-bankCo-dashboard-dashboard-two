@@ -114,7 +114,7 @@
             "description": "holding the main components of the page",
             "children": {
                 "TotalWidgetV2": {
-                    "count": 4,
+                    "count": 6,
                     "location": "top left-top of the container",
                     "description": "2 x 2 grid"
                 },
@@ -235,5 +235,5 @@
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": ["TotalWidgetV2 added"]
 }
