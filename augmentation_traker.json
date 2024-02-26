@@ -202,30 +202,6 @@
                         }
                     }
                 },
-                "Wallet": {
-                    "count": 1,
-                    "location": "to the right of the Summary component",
-                    "description": "simple card, like atm card",
-                    "children": {
-                        "PaymentSelect": {
-                            "count": 1,
-                            "description": "three dots button to which opens a list to select payment method"
-                        },
-                        "Slider": {
-                            "count": 1,
-                            "description": "simple card, like atm card"
-                        },
-                        "inputElement": {
-                            "count": 1,
-                            "description": "text type input element"
-                        },
-                        "PaymentFilter": {
-                            "count": 1,
-                            "location": "below the Slider card component",
-                            "description": "dropdown list"
-                        }
-                    }
-                },
                 "Calender": {
                     "count": 1,
                     "description": "a calender component",
@@ -235,5 +211,5 @@
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": ["removed wallet"]
 }
