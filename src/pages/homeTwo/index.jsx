@@ -28,6 +28,9 @@ function HomeTwo() {
                     <Calender />
                 </section>
             </div>
+            <br/>
+            <Location />
+
         </main>
     );
 }
