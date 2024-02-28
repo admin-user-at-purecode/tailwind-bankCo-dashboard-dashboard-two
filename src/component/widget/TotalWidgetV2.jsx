@@ -143,10 +143,13 @@ function TotalWIdgetCardV2({ logo, activeMember }) {
 function TotalWidgetV2() {
   return (
     <div className="xl:w-66 w-full">
-      <div className="grid sm:grid-cols-2 sm:gap-[24px] gap-3">
+      <div className="">
         <TotalWIdgetCardV2 logo={earn} activeMember={member} />
+        <br/>
         <TotalWIdgetCardV2 logo={earn} activeMember={member} />
+        <br/>
         <TotalWIdgetCardV2 logo={earn} activeMember={member} />
+        <br/>
         <TotalWIdgetCardV2 logo={earn} activeMember={member} />
       </div>
     </div>

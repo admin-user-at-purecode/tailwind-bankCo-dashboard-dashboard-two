@@ -234,6 +234,6 @@
             }
         }
     },
-    "sizing_updates": [".."],
+    "sizing_updates": ["resize the TotalWidgetV2"],
     "screen_and_layout_augmentations": ["..."]
 }
