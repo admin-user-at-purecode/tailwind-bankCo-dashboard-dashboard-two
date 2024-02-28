@@ -152,7 +152,7 @@
                 },
                 "Location": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "to the right of the Summary component and one component is below the usertab",
                     "children": {
                         "LocationItem": {
                             "count": 3,
@@ -234,6 +234,6 @@
             }
         }
     },
-    "sizing_updates": [".."],
+    "sizing_updates": ["resize the location component"],
     "screen_and_layout_augmentations": ["..."]
 }
