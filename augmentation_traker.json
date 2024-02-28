@@ -234,6 +234,6 @@
             }
         }
     },
-    "sizing_updates": [".."],
+    "sizing_updates": ["resize summary"],
     "screen_and_layout_augmentations": ["..."]
 }

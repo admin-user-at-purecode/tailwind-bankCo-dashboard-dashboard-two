@@ -27,8 +27,13 @@ function HomeTwo() {
                     <Wallet />
                     <Calender />
                 </section>
+               
             </div>
+            <br/>
+            <Summary />
+          
         </main>
+        
     );
 }
 
