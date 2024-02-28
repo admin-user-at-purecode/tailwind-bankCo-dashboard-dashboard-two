@@ -136,7 +136,7 @@
                 },
                 "Summary": {
                     "count": 1,
-                    "location": "bottom of the TotalWidgetV2 and Efficiency",
+                    "location": "bottom of the TotalWidgetV2 and Efficiency and one is below the usertab",
                     "children": {
                         "DateFilter": {
                             "count": 1,
@@ -235,5 +235,5 @@
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": ["summary added"]
 }
