@@ -6,7 +6,6 @@ import "./index.css";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "react-quill/dist/quill.snow.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
