@@ -163,7 +163,7 @@
                 },
                 "ListTab": {
                     "count": 1,
-                    "location": "at the bottom of the summary and Location",
+                    "location": "at the bottom of the summary and Location and one is above the summary",
                     "description": "table containing four columns",
                     "children": {
                         "Search": {
@@ -235,5 +235,5 @@
         }
     },
     "sizing_updates": [".."],
-    "screen_and_layout_augmentations": ["..."]
+    "screen_and_layout_augmentations": ["ListTab added"]
 }

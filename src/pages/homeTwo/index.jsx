@@ -16,6 +16,8 @@ function HomeTwo() {
                         <TotalWidgetV2 />
                         <Efficiency height="h-[180px]" />
                     </div>
+                    <ListTab />
+                    <br/>
                     <div className="w-full mb-[24px] flex space-x-[24px]">
                         <Summary />
                         <Location />
