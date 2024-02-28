@@ -1,4 +1,3 @@
-import bg from "../../../assets/images/bg/upgrade-bg.png";
 import logo from "../../../assets/images/logo/logo-color.svg";
 import logoW from "../../../assets/images/logo/logo-white.svg";
 import profileImg from "../../../assets/images/avatar/profile-xs.png";
@@ -63,35 +62,7 @@ function Sidebar({ handleActive }) {
                     <img src={logo} className="block dark:hidden" alt="logo" />
                     <img src={logoW} className="hidden dark:block" alt="logo" />
                 </a>
-                <button
-                    aria-label="none"
-                    type="button"
-                    onClick={handleActive}
-                    className="drawer-btn absolute right-0 top-auto"
-                    title="Ctrl+b"
-                >
-                    <span>
-                        <svg
-                            width="16"
-                            height="40"
-                            viewBox="0 0 16 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M0 10C0 4.47715 4.47715 0 10 0H16V40H10C4.47715 40 0 35.5228 0 30V10Z"
-                                fill="#22C55E"
-                            />
-                            <path
-                                d="M10 15L6 20.0049L10 25.0098"
-                                stroke="#ffffff"
-                                strokeWidth="1.2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </span>
-                </button>
+               
             </div>
             <div className="sidebar-body overflow-style-none relative z-30 h-screen w-full overflow-y-scroll pb-[200px] pl-[48px] pt-[14px]">
                 <div className="nav-wrapper mb-[36px] pr-[50px]">
@@ -235,39 +206,7 @@ function Sidebar({ handleActive }) {
                         </ul>
                     </div>
                 </div>
-                <div className="upgrade-wrapper mb-[26px] h-[172px] w-full pr-[24px]">
-                    <div
-                        className="upgrade-banner relative h-full w-full rounded-lg"
-                        style={{ backgroundImage: `url(${bg})` }}
-                    >
-                        <div
-                            style={{ left: `calc(50% - 20px)`, top: `-20px` }}
-                            className="absolute flex h-10 w-10 items-center justify-center rounded-full border border-white bg-success-300"
-                        >
-                            <span>
-                                <Svg />
-                            </span>
-                        </div>
-                        <h1 className="mb-2 pt-8 text-center text-xl font-bold text-white">
-                            Unlimited Cashback
-                        </h1>
-                        <p className="mb-2 px-7 text-center text-sm leading-5 text-white opacity-[0.5]">
-                            Instant 2% back on all your spend to your account.
-                        </p>
-                        <div className="flex justify-center">
-                            <a href="#">
-                                <div className="flex h-[36px] w-[134px] justify-center rounded-lg bg-success-300 transition duration-300 ease-in-out hover:bg-success-400">
-                                    <div className="flex items-center space-x-1.5">
-                                        <span className="text-sm font-semibold text-white">
-                                            Upgrade Now
-                                        </span>
-                                        <Svg />
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </aside>
     );
