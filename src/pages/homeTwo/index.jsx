@@ -28,6 +28,8 @@ function HomeTwo() {
                     <Calender />
                 </section>
             </div>
+            <br/>
+            <Wallet />
         </main>
     );
 }

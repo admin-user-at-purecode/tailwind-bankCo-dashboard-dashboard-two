@@ -204,7 +204,7 @@
                 },
                 "Wallet": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "to the right of the Summary component and one component is below the usertab",
                     "description": "simple card, like atm card",
                     "children": {
                         "PaymentSelect": {
@@ -234,6 +234,6 @@
             }
         }
     },
-    "sizing_updates": [".."],
+    "sizing_updates": ["resize the wallet"],
     "screen_and_layout_augmentations": ["..."]
 }
