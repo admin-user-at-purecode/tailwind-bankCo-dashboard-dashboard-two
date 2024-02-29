@@ -120,7 +120,7 @@
                 },
                 "Efficiency": {
                     "count": 1,
-                    "location": "to the bottom of the header, right of the TotalWidgetV2",
+                    "location": "to the bottom of the header",
                     "children": {
                         "MonthFilter": {
                             "count": 1,
@@ -136,7 +136,7 @@
                 },
                 "Summary": {
                     "count": 1,
-                    "location": "bottom of the TotalWidgetV2 and Efficiency",
+                    "location": "bottom of the Efficiency",
                     "children": {
                         "DateFilter": {
                             "count": 1,
@@ -145,14 +145,14 @@
                         },
                         "BarChart": {
                             "count": 1,
-                            "location": "to the bottom of the Date Filter",
+                            "location": "bottom of the totalwidgetV2",
                             "description": "graphical representation in bars"
                         }
                     }
                 },
                 "Location": {
                     "count": 1,
-                    "location": "to the right of the Summary component",
+                    "location": "below of the summary component",
                     "children": {
                         "LocationItem": {
                             "count": 3,
@@ -234,6 +234,6 @@
             }
         }
     },
-    "sizing_updates": [".."],
+    "sizing_updates": ["reszie the totalwidgetV2 , efficiency , summary and location component"],
     "screen_and_layout_augmentations": ["..."]
 }

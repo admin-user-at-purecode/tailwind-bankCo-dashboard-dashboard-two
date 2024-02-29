@@ -9,10 +9,10 @@ function Efficiency({ width, height }) {
           <h3 className="text-xl font-bold text-bgray-900 dark:text-white">
             Efficiency
           </h3>
-          <MonthFilter options={["January", "February", "March"]} />
+          <MonthFilter options={["January", "February", "March"]}  />
         </div>
-        <div className="px-[20px] py-[12px]">
-          <div className="mb-4 flex items-center space-x-8">
+        <div className="px-[20px] py-[12px] flex item-center justify-center">
+          <div className="mb-4 flex items-center space-x-10">
             <div
               className={`relative ${width ? width : "w-[180px]"} ${
                 height && height
@@ -88,7 +88,7 @@ function Efficiency({ width, height }) {
               </div>
             </div>
           </div>
-          <div className="status">
+          <div className="status mx-10 my-5">
             <div className="mb-1.5 flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <div className="h-2.5 w-2.5 rounded-full bg-success-300"></div>
